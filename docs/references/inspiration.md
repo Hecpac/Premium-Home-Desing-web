@@ -1,0 +1,31 @@
+# Referencias Visuales & Inspiración
+
+Este documento guía el estilo estético del proyecto "Premium Home Design". El agente debe consultar estos enlaces para entender la calidad y el tono esperados.
+
+---
+
+## 1. ProForma DB (Webflow Template)
+
+- **URL:** [https://webflow.com/templates/html/proforma-db-website-template](https://webflow.com/templates/html/proforma-db-website-template)
+- **Por qué nos gusta:**
+  - Estructura limpia para portafolios de arquitectura.
+  - Uso de tipografía grande y espacios en blanco (Neo-Swiss).
+  - Transiciones suaves entre proyectos.
+- **Elemento a copiar:** La forma en que presentan las galerías de fotos sin saturar la pantalla.
+
+---
+
+## 2. Xrysi Tomi Architects (Industrial Office)
+
+- **URL:** [https://www.xrysitomi.gr/](https://www.xrysitomi.gr/) (Referencia: Proyecto Industrial Office & Commercial Space)
+- **Por qué nos gusta:**
+  - Estética "Golden Ratio" y equilibrio visual.
+  - Uso de materiales crudos visualizados en web (concreto, metal).
+  - **Tono:** Serio, ingenieril, de ultra-lujo.
+- **Elemento a copiar:** La sobriedad de los layouts y el uso de líneas finas divisorias.
+
+---
+
+## Instrucción para el Agente
+
+> Al diseñar componentes, busca un punto medio entre la interactividad e-commerce de *ProForma* y la elegancia estructural de *Xrysi Tomi*.

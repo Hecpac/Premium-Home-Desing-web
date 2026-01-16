@@ -1,0 +1,21 @@
+# Premium Home Design | Dallas Luxury Builder
+
+## Summary
+Premium Home Design is a premier custom home builder based in the Dallas-Fort Worth metroplex. We specialize in high-end residential construction, focusing on modern and Neo-Swiss architectural styles. We combine uncompromising design with meticulous execution to deliver luxury living spaces.
+
+## Key Services
+*   **Architectural Design:** Full-service design including BIM modeling and photorealistic 3D rendering.
+*   **Residential Construction:** High-end custom home building with premium materials and craftsmanship.
+*   **Integral Renovations:** Complete transformations of existing luxury properties, enhancing both form and function.
+
+## Technical Differentiators
+*   **Agentic Project Management:** Leveraging advanced AI agents for precise scheduling, resource allocation, and real-time updates.
+*   **Total Transparency:** Clients have complete visibility into project status, financials, and timelines.
+
+## Contact
+*   **Email:** info@premiumhome.design
+*   **Website:** https://premiumhome.design
+
+## Site Architecture
+*   **Tech Stack:** Built with Next.js 16 (App Router).
+*   **Performance:** Utilizes Partial Prerendering (PPR) for instant page loads and optimal Core Web Vitals.

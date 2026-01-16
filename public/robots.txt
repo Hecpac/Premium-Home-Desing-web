@@ -1,0 +1,16 @@
+# Premium Home Design - robots.txt
+# https://premiumhomedesign.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://premiumhomedesign.com/sitemap.xml
+
+# Disallow admin/api routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /studio/
+
+# AI Crawlers - LLMs.txt
+# See /llms.txt for structured content for AI agents

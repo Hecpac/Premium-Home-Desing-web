@@ -1,0 +1,8 @@
+name: "design-system"
+description: "Aplica la identidad visual 'Premium Corsa': Estética Ferrari mezclada con diseño Neo-Swiss minimalista."
+triggers:
+  - "estilar"
+  - "diseñar ui"
+  - "generar componente"
+context_files:
+  - "branding.md"

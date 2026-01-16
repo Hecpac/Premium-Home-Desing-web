@@ -1,0 +1,10 @@
+name: "tech-architect"
+description: "Experto en Next.js 16 y Web Vitals. Valida que el código cumpla con PPR, accesibilidad y rendimiento."
+version: "1.0.0"
+triggers:
+  - "revisar código"
+  - "optimizar componente"
+  - "crear estructura"
+  - "generar pagina"
+context_files:
+  - "rules.md"

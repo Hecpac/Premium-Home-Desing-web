@@ -6,6 +6,7 @@ const FOOTER_LINKS = [
   { label: 'Projects', href: '/projects' },
   { label: 'Services', href: '/services' },
   { label: 'Process', href: '/process' },
+  { label: 'Investor Relations', href: '/investor-relations' },
   { label: 'Journal', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];

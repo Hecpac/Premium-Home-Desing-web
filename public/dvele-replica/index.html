@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dvele Homes Replica - Premium Architecture">
+    <title>Dvele Replica | Premium Architecture</title>
+    
+    <!-- Fonts (Google Fonts Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets (Relative paths) -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN STICKY -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <!-- Using placeholder if exact SVG not available, or text fallback if image breaks -->
+                <img src="./assets/images/logo-color.svg" alt="Logo" class="logo-color" onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'font-weight:bold;font-size:1.5rem;color:var(--primary)\'>DVELE</span>'">
+                <img src="./assets/images/logo-white.svg" alt="Logo" class="logo-white" onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'font-weight:bold;font-size:1.5rem;color:white\'>DVELE</span>'">
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#homes">Homes</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://placehold.co/1920x1080/1a4d7a/ffffff?text=Video+Loading">
+            <!-- Using a solid color or placeholder as I can't generate a video file. 
+                 User should replace these with actual video files. -->
+            <source src="./assets/videos/hero-video.mp4" type="video/mp4">
+            <source src="./assets/videos/hero-video.webm" type="video/webm">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- Placeholder for logo if missing -->
+            <img src="./assets/images/logo-white.svg" alt="" class="hero-logo" style="max-width: 100px; display: block; margin: 0 auto 2rem auto;" onerror="this.style.display='none'"> 
+            
+            <h1 class="hero-title">
+                <em>High performance</em><br>
+                healthy homes
+            </h1>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION 1 -->
+    <section class="content-section" id="homes">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>The Problem</h2>
+                    <p>We're facing multiple crises in housing availability, affordability, energy security, health issues, and a changing weather system. Traditional building methods are failing to keep up with the demands of the modern world.</p>
+                    <a href="#" class="btn-link">Learn more →</a>
+                </div>
+                <div class="content-image">
+                    <img src="https://images.unsplash.com/photo-1600596542815-e32870110274?auto=format&fit=crop&w=800&q=80" alt="Modern home exterior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION 2 (REVERSE) -->
+    <section class="content-section reverse">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>Homes <em>to protect you</em> and the planet</h2>
+                    <p>Our modular homes are built in a controlled environment, ensuring precision, waste reduction, and superior durability. We create healthy living spaces that generate more energy than they consume.</p>
+                    <a href="#" class="btn-link">See our impact →</a>
+                </div>
+                <div class="content-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Sustainable interior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="process-intro">
+                <h2>Our Process</h2>
+                <p>Buying a home doesn't need to be a thousand tiny decisions. We've streamlined the journey to make it enjoyable and transparent.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step" data-step="1">
+                    <span class="step-number">01</span>
+                    <h3>Choose your floorplan</h3>
+                    <p>Each home is modern-inspired, with clean lines and timeless layouts designed for real life.</p>
+                </div>
+                
+                <div class="step" data-step="2">
+                    <span class="step-number">02</span>
+                    <h3>Pick the design</h3>
+                    <p>Our design team has curated beautiful finish bundles for you to choose from.</p>
+                </div>
+                
+                <div class="step" data-step="3">
+                    <span class="step-number">03</span>
+                    <h3>Live in luxury</h3>
+                    <p>Get back quality time in a remarkable home that takes care of you.</p>
+                </div>
+            </div>
+            
+            <div class="process-cta">
+                <h3>It's <em>effortless</em></h3>
+                <a href="#" class="btn-primary">See our process</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="features-section" id="benefits">
+        <div class="container-fluid">
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1600&q=80" class="feature-bg" alt="Solar roof">
+                <div class="feature-overlay"></div>
+                <div class="feature-content">
+                    <h3>Energy independence</h3>
+                    <p>In the event of a grid power outage, critical systems will stay on thanks to integrated solar and battery storage.</p>
+                    <a href="#" class="btn-link-white">See how it works →</a>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=80" class="feature-bg" alt="Structural detail">
+                <div class="feature-overlay"></div>
+                <div class="feature-content">
+                    <h3>Built for a lifetime</h3>
+                    <p>Next-generation building science and materials ensure your home stands the test of time and elements.</p>
+                    <a href="#" class="btn-link-white">See how it works →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2>Sustainability meets luxury</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Kitchen detail">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18cf6b3ea?auto=format&fit=crop&w=600&q=80" alt="Living room">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="Bedroom">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80" alt="Outdoor space">
+                </div>
+            </div>
+            <a href="#" class="btn-primary">Choose your floorplan</a>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter-section" id="contact">
+        <div class="container">
+            <h3>Join us for Office Hours</h3>
+            <p>A monthly, live stream video to learn more about our homes and ask questions directly to our team.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email" 
+                    required 
+                    aria-label="Email address"
+                >
+                <button type="submit" class="btn-primary" style="border:none; cursor:pointer;">Sign Up</button>
+            </form>
+            <p class="success-message" id="successMessage">
+                Thanks! Your seat has been saved. Check your email.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#homes">Homes</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Premium Digital Logic. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/main.js" defer></script>
+</body>
+</html>

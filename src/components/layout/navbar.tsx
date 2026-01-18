@@ -57,7 +57,7 @@ export function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/20"
+            className="bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/20"
           >
             Book Consultation
           </Link>
@@ -89,7 +89,7 @@ export function Navbar() {
             <div className="pt-6">
               <Link
                 href="/contact"
-                className="block w-full rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-white transition-all hover:bg-primary-dark"
+                className="block w-full bg-primary px-5 py-3 text-center text-sm font-semibold text-white transition-all hover:bg-primary-dark"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Book Consultation

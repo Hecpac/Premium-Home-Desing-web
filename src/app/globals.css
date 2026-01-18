@@ -10,61 +10,71 @@
   --color-primary: #D40000;
   --color-primary-dark: #B30000;
   --color-primary-light: #FF1A1A;
-  
+
   /* Accent - Giallo Modena */
   --color-accent: #FFF200;
   --color-accent-dark: #E6D900;
-  
+
   /* Surface colors - WHITE DOMINANT */
   --color-surface-light: #F3F4F6;
-  --color-surface-dark: #FAFAFA; /* Inversion: Dark surface is now light gray */
+  --color-surface-dark: #FAFAFA;
+  /* Inversion: Dark surface is now light gray */
   --color-surface-card: #FFFFFF;
   --color-surface-elevated: #FFFFFF;
-  
+
   /* Neutrals - High Contrast for Light Mode */
   --color-carbon: #0A0A0A;
-  --color-titanium: #3F3F46; /* Zinc-700 */
-  --color-titanium-light: #71717A; /* Zinc-500 */
+  --color-titanium: #3F3F46;
+  /* Zinc-700 */
+  --color-titanium-light: #71717A;
+  /* Zinc-500 */
   --color-bone: #F4F4F5;
   --color-bone-dark: #E4E4E7;
-  
+
   /* Semantic - Light Theme Mappings */
-  --color-background: #FFFFFF; /* Pure White */
-  --color-foreground: #09090b; /* Zinc-950 (Almost Black) */
+  --color-background: #FFFFFF;
+  /* Pure White */
+  --color-foreground: #09090b;
+  /* Zinc-950 (Almost Black) */
   --color-muted: #71717A;
-  --color-border: #E4E4E7; /* Zinc-200 */
-  --color-border-light: #F4F4F5; /* Zinc-100 */
-  
+  --color-border: #E4E4E7;
+  /* Zinc-200 */
+  --color-border-light: #F4F4F5;
+  /* Zinc-100 */
+
   /* === Typography === */
   --font-sans: var(--font-geist-sans), Inter, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
   --font-serif: var(--font-playfair), Georgia, serif;
-  
+
   /* === Spacing === */
   --spacing-section: 6rem;
   --spacing-section-sm: 4rem;
-  
-  /* === Border Radius === */
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-2xl: 1.5rem;
+
+  /* === Border Radius - BRUTALIST ZERO === */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
   --radius-full: 9999px;
-  
-  /* === Shadows === */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05); /* Softer shadows for white */
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.05);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.05);
-  --shadow-glow: 0 0 20px rgb(212 0 0 / 0.15); /* Softer red glow */
-  
+  /* Keep full for specific pill badges only */
+
+  /* === Shadows - STRUCTURAL === */
+  --shadow-sm: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 0 0 rgba(0, 0, 0, 0.05);
+  /* Solid hard shadows if any */
+  --shadow-lg: 0 10px 0 0 rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 0 0 rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 0 1px var(--color-primary);
+  /* Sharp outline glow */
+
   /* === Transitions === */
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --duration-fast: 150ms;
   --duration-normal: 250ms;
   --duration-slow: 400ms;
-  
+
   /* === Container === */
   --container-max: 1280px;
   --container-prose: 65ch;
@@ -72,7 +82,8 @@
 
 /* ===== Base Styles ===== */
 :root {
-  color-scheme: light; /* Enforce Light Mode */
+  color-scheme: light;
+  /* Enforce Light Mode */
 }
 
 html {
@@ -83,7 +94,7 @@ html {
   html {
     scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {

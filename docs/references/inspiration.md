@@ -26,6 +26,16 @@ Este documento guía el estilo estético del proyecto "Premium Home Design". El 
 
 ---
 
+## 3. Dvele Homes (Modern Prefab)
+
+- **URL:** [https://dvele-homes.webflow.io/](https://dvele-homes.webflow.io/)
+- **Por qué nos gusta:**
+  - **Motion:** "Motion como tarjetas" - Animaciones de scroll donde los elementos se apilan o deslizan con parallax suave.
+  - **Feel:** Moderno, high-tech, pero cálido.
+- **Elemento a copiar:** La interactividad avanzada en el scroll (Sticky Cards / Parallax) para dar sensación de profundidad.
+
+---
+
 ## Instrucción para el Agente
 
 > Al diseñar componentes, busca un punto medio entre la interactividad e-commerce de *ProForma* y la elegancia estructural de *Xrysi Tomi*.

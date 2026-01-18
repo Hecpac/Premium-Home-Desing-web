@@ -5,25 +5,24 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { SPRING_CONFIG } from '@/lib/constants';
 
-// Animation variants for staggered entrance
 const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.15,
-            delayChildren: 0.1,
+            staggerChildren: 0.1,
+            delayChildren: 0.05,
         },
     },
 };
 
 const cardVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.95 },
+    hidden: { opacity: 0, y: 10, scale: 1 },
     visible: {
         opacity: 1,
         y: 0,
         scale: 1,
-        transition: SPRING_CONFIG.smooth,
+        transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }, // Cubic bezier for mechanical feel
     },
 };
 
@@ -33,25 +32,25 @@ export function HeroBento() {
             {/* Background grid - Subtle gray lines on white */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)] bg-[size:6rem_6rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-40 pointer-events-none" />
 
-            <div className="relative mx-auto max-w-7xl">
+            <div className="relative mx-auto max-w-7xl border border-surface-highlight bg-surface-highlight">
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
-                    className="grid gap-4 md:grid-cols-3 md:grid-rows-2 lg:gap-6"
+                    className="grid gap-px bg-surface-highlight md:grid-cols-3 md:grid-rows-2"
                 >
                     {/* Main Card - High Key Architecture */}
                     <motion.div
                         variants={cardVariants}
-                        className="relative col-span-full row-span-2 overflow-hidden rounded-2xl border border-surface-highlight bg-background md:col-span-2"
+                        className="relative col-span-full row-span-2 overflow-hidden bg-background md:col-span-2"
                     >
                         {/* Optional subtle image mask if needed, but keeping it clean white as requested */}
                         <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-surface/50 opacity-90" />
 
                         <div className="relative flex min-h-[400px] flex-col justify-end p-8 md:min-h-[500px] lg:p-12">
                             {/* Label */}
-                            <span className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-surface-highlight bg-white px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-text-secondary shadow-soft">
-                                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                            <span className="mb-6 inline-flex w-fit items-center gap-2 border border-surface-highlight bg-white px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-text-secondary">
+                                <span className="h-1.5 w-1.5 bg-primary" />
                                 Residential Architecture
                             </span>
 
@@ -73,7 +72,7 @@ export function HeroBento() {
                     {/* Action Card - Ferrari Red CTA */}
                     <motion.div
                         variants={cardVariants}
-                        className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-surface-highlight bg-white p-6 shadow-soft transition-all duration-300 hover:shadow-lg md:col-span-1"
+                        className="group relative flex flex-col justify-between overflow-hidden bg-white p-8 transition-all duration-300 md:col-span-1"
                     >
                         <div>
                             <p className="text-xs font-medium uppercase tracking-widest text-text-secondary">
@@ -86,7 +85,7 @@ export function HeroBento() {
 
                         <Link
                             href="/contact"
-                            className="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-primary-dark group-hover:scale-[1.02] shadow-md hover:shadow-xl hover:shadow-primary/20"
+                            className="mt-8 inline-flex w-full items-center justify-center gap-3 bg-primary px-6 py-5 text-sm font-bold text-white transition-all duration-300 hover:bg-primary-dark"
                         >
                             Iniciar ahora
                             <ArrowRight className="h-4 w-4" />
@@ -96,7 +95,7 @@ export function HeroBento() {
                     {/* Stats Card - Swiss Typographic Style */}
                     <motion.div
                         variants={cardVariants}
-                        className="relative flex flex-col justify-between overflow-hidden rounded-2xl border border-surface-highlight bg-surface p-8 md:col-span-1"
+                        className="relative flex flex-col justify-between overflow-hidden bg-surface p-8 md:col-span-1"
                     >
                         <div>
                             {/* Big Number */}

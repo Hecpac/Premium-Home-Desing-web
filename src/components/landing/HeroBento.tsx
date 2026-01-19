@@ -1,13 +1,12 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { SPRING_CONFIG } from '@/lib/constants';
 
 const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
+    show: {
         opacity: 1,
         transition: {
             staggerChildren: 0.1,
@@ -16,13 +15,15 @@ const containerVariants = {
     },
 };
 
-const cardVariants = {
-    hidden: { opacity: 0, y: 10, scale: 1 },
-    visible: {
+const cardVariants: Variants = {
+    hidden: { opacity: 0, y: 18 },
+    show: {
         opacity: 1,
         y: 0,
-        scale: 1,
-        transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }, // Cubic bezier for mechanical feel
+        transition: {
+            duration: 0.5,
+            ease: [0.22, 1, 0.36, 1] as const,
+        },
     },
 };
 
@@ -36,7 +37,7 @@ export function HeroBento() {
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
-                    animate="visible"
+                    animate="show"
                     className="grid gap-px bg-surface-highlight md:grid-cols-3 md:grid-rows-2"
                 >
                     {/* Main Card - High Key Architecture */}
@@ -44,8 +45,8 @@ export function HeroBento() {
                         variants={cardVariants}
                         className="relative col-span-full row-span-2 overflow-hidden bg-background md:col-span-2"
                     >
-                        {/* Optional subtle image mask if needed, but keeping it clean white as requested */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-surface/50 opacity-90" />
+                        {/* Subtle dark overlay for readability */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/45 via-black/20 to-transparent" />
 
                         <div className="relative flex min-h-[400px] flex-col justify-end p-8 md:min-h-[500px] lg:p-12">
                             {/* Label */}
@@ -123,3 +124,5 @@ export function HeroBento() {
         </section>
     );
 }
+
+export default HeroBento;

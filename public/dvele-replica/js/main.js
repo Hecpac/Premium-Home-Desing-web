@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Header Scroll Behavior ---
     const header = document.getElementById('header');
-    let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
@@ -14,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.classList.remove('scrolled');
         }
-
-        lastScroll = currentScroll;
     });
 
 

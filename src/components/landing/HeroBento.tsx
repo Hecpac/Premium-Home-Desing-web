@@ -44,8 +44,8 @@ export function HeroBento() {
                         variants={cardVariants}
                         className="relative col-span-full row-span-2 overflow-hidden bg-background md:col-span-2"
                     >
-                        {/* Optional subtle image mask if needed, but keeping it clean white as requested */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-surface/50 opacity-90" />
+                    {/* Subtle bottom gradient for legibility without veiling the image */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/0 to-black/45" />
 
                         <div className="relative flex min-h-[400px] flex-col justify-end p-8 md:min-h-[500px] lg:p-12">
                             {/* Label */}

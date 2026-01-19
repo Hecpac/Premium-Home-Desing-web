@@ -125,3 +125,5 @@ export function HeroBento() {
         </section>
     );
 }
+
+export default HeroBento;

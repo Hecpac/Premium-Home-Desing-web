@@ -1,5 +1,5 @@
-import { BackToTop } from "@/components/ui";
-import { HeroBento } from "@/components/landing";
+import HeroBento from "@/components/landing/HeroBento";
+import { HeroStats } from "@/components/hero/HeroStats";
 import ProjectShowcase from "@/components/ProjectShowcase";
 // TODO: restore missing components once available
 // import HeroSection from "@/components/HeroSection";
@@ -12,55 +12,50 @@ import ProjectShowcase from "@/components/ProjectShowcase";
 // import { InsightsReveal } from "@/components/motion/InsightsReveal";
 // import { ExecutionProtocol } from "@/components/home/ExecutionProtocol";
 
-export default function Home() {
+export default function Page() {
     return (
-        <div className="min-h-screen overflow-x-hidden">
-            <main id="main-content" className="relative pt-14">
-                {/* 1. HERO (keep) */}
-                <HeroBento />
+        <>
+            <HeroBento />
+            <div className="mt-6 md:mt-10">
+                <HeroStats />
+            </div>
 
-                {/* 2. CINEMATIC SCROLL GALLERY */}
-                <ProjectShowcase />
+            <ProjectShowcase />
+            {/* TODO: restore remaining sections once available */}
+            {/*
+            <section className="relative z-10">
+                <ExecutionProtocol />
+            </section>
 
-                {/* TODO: restore remaining sections once available */}
-                {/*
-                <section className="relative z-10">
-                    <ExecutionProtocol />
-                </section>
+            <section id="capabilities" className="relative z-10 scroll-mt-20 py-32">
+                <CapabilitiesReveal>
+                    <ServicesGrid />
+                </CapabilitiesReveal>
+            </section>
 
-                <section id="capabilities" className="relative z-10 scroll-mt-20 py-32">
-                    <CapabilitiesReveal>
-                        <ServicesGrid />
-                    </CapabilitiesReveal>
-                </section>
-
-                <section id="process" className="relative z-10 scroll-mt-20">
-                    <ProcessPin>
-                        <div className="container mx-auto px-4 md:px-6 lg:px-8 pt-24 md:pt-32">
-                            <div className="mb-16 max-w-2xl">
-                                <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-4 text-foreground">
-                                    Execution Protocol
-                                </h2>
-                                <p className="font-mono text-sm text-muted-foreground uppercase tracking-widest">
-                                    {"//"} From Feasibility to Handover
-                                </p>
-                            </div>
+            <section id="process" className="relative z-10 scroll-mt-20">
+                <ProcessPin>
+                    <div className="container mx-auto px-4 md:px-6 lg:px-8 pt-24 md:pt-32">
+                        <div className="mb-16 max-w-2xl">
+                            <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-4 text-foreground">
+                                Execution Protocol
+                            </h2>
+                            <p className="font-mono text-sm text-muted-foreground uppercase tracking-widest">
+                                {"//"} From Feasibility to Handover
+                            </p>
                         </div>
+                    </div>
 
-                        <TechnicalProcessTimeline />
-                    </ProcessPin>
-                </section>
+                    <TechnicalProcessTimeline />
+                </ProcessPin>
+            </section>
 
-                <section id="journal" className="border-t border-border scroll-mt-20">
-                    <InsightsReveal>
-                        <InsightBrief />
-                    </InsightsReveal>
-                </section>
-                */}
-
-            </main>
-
-            <BackToTop threshold={400} />
-        </div>
+            <section id="journal" className="border-t border-border scroll-mt-20">
+                <InsightsReveal>
+                    <InsightBrief />
+                </InsightsReveal>
+            </section>
+            */}
+        </>
     );
 }

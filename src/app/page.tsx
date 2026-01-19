@@ -1,61 +1,49 @@
-import HeroBento from "@/components/landing/HeroBento";
-import { HeroStats } from "@/components/hero/HeroStats";
-import ProjectShowcase from "@/components/ProjectShowcase";
-// TODO: restore missing components once available
-// import HeroSection from "@/components/HeroSection";
-// import { InsightBrief } from "@/components/features/InsightBrief";
-// import { TechnicalProcessTimeline } from "@/components/features/TechnicalProcessTimeline";
-// import { ServicesGrid } from "@/components/features/ServicesGrid";
-// import { HeroPin } from "@/components/motion/HeroPin";
-// import { CapabilitiesReveal } from "@/components/motion/CapabilitiesReveal";
-// import { ProcessPin } from "@/components/motion/ProcessPin";
-// import { InsightsReveal } from "@/components/motion/InsightsReveal";
-// import { ExecutionProtocol } from "@/components/home/ExecutionProtocol";
+import { Hero } from "@/components/home/Hero";
+import { HowWeWork } from "@/components/home/HowWeWork";
+import { FeaturedProjects } from "@/components/home/FeaturedProjects";
+import { Capabilities } from "@/components/home/Capabilities";
+import { Process } from "@/components/home/Process";
+import { Contact } from "@/components/home/Contact";
+import { Footer } from "@/components/layout";
+import { HeroStats } from "@/components/home/HeroStats";
 
-export default function Page() {
+export default function Home() {
     return (
-        <>
-            <HeroBento />
-            <div className="mt-6 md:mt-10">
+        <main className="relative w-full min-h-screen bg-[var(--color-canvas)] text-[var(--color-ink)] selection:bg-[var(--color-accent)] selection:text-white">
+            {/* 1. LAYER: THE STATEMENT (Light Mode) */}
+            {/* El Hero maneja su propia salida con useScroll para el efecto blur */}
+            <Hero />
+
+            {/* ✅ NUEVO: “leyenda / stats” debajo del hero (tipo Architect) */}
+            <div className="relative z-10 -mt-8 md:-mt-12">
                 <HeroStats />
             </div>
 
-            <ProjectShowcase />
-            {/* TODO: restore remaining sections once available */}
-            {/*
-            <section className="relative z-10">
-                <ExecutionProtocol />
-            </section>
+            {/* 2. LAYER: THE PROCESS (Light Mode Context) */}
+            <HowWeWork />
 
-            <section id="capabilities" className="relative z-10 scroll-mt-20 py-32">
-                <CapabilitiesReveal>
-                    <ServicesGrid />
-                </CapabilitiesReveal>
-            </section>
+            {/* 3. LAYER: THE EVIDENCE (Dark Mode Context) */}
+            <div className="relative z-10 w-full bg-[#21201b] text-[#fffbf5]">
+                <FeaturedProjects />
+            </div>
 
-            <section id="process" className="relative z-10 scroll-mt-20">
-                <ProcessPin>
-                    <div className="container mx-auto px-4 md:px-6 lg:px-8 pt-24 md:pt-32">
-                        <div className="mb-16 max-w-2xl">
-                            <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-4 text-foreground">
-                                Execution Protocol
-                            </h2>
-                            <p className="font-mono text-sm text-muted-foreground uppercase tracking-widest">
-                                {"//"} From Feasibility to Handover
-                            </p>
-                        </div>
-                    </div>
+            {/* 4. LAYER: THE LEDGER (Light Mode Context) */}
+            <div className="relative z-10 w-full bg-[var(--color-canvas)]">
+                <Capabilities />
+            </div>
 
-                    <TechnicalProcessTimeline />
-                </ProcessPin>
-            </section>
+            {/* 5. LAYER: THE PROTOCOL (Dark Mode Context) */}
+            <div className="relative z-10 w-full bg-[#21201b] text-[#fffbf5]">
+                <Process />
+            </div>
 
-            <section id="journal" className="border-t border-border scroll-mt-20">
-                <InsightsReveal>
-                    <InsightBrief />
-                </InsightsReveal>
-            </section>
-            */}
-        </>
+            {/* 6. LAYER: THE RELEASE (Light Mode Context) */}
+            <div className="relative z-10 w-full bg-[var(--color-canvas)]">
+                <Contact />
+            </div>
+
+            {/* ✅ Footer (para no dejar import muerto y cerrar la narrativa) */}
+            <Footer />
+        </main>
     );
 }

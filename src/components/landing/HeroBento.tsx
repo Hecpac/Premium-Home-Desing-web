@@ -3,7 +3,6 @@
 import { motion, type Variants } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { SPRING_CONFIG } from '@/lib/constants';
 
 const containerVariants = {
     hidden: { opacity: 0 },

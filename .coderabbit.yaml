@@ -1,0 +1,21 @@
+# Configuración de CodeRabbit para Next.js
+language: "es-ES"
+
+reviews:
+  # 'assertive' para que sea directo y estricto, o 'chill' para algo más relajado.
+  profile: "assertive"
+  
+  # Resumen de alto nivel al inicio del PR
+  high_level_summary: true
+  
+  # Mapa del código (ayuda a entender la estructura del proyecto)
+  poem: false    # Desactivamos el poema para mantenerlo profesional
+  
+  auto_review:
+    enabled: true
+    ignore_title_keywords:
+      - "WIP"
+      - "Draft"
+
+chat:
+  auto_reply: true

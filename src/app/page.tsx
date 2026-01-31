@@ -1,5 +1,6 @@
 import { BackToTop } from "@/components/ui";
 import HeroSection from "@/components/HeroSection";
+import { HeroStats } from "@/components/hero/HeroStats";
 import { InsightBrief } from "@/components/features/InsightBrief";
 import { TechnicalProcessTimeline } from "@/components/features/TechnicalProcessTimeline";
 import { ServicesGrid } from "@/components/features/ServicesGrid";
@@ -18,6 +19,10 @@ export default function Home() {
                 <HeroPin>
                     <HeroSection />
                 </HeroPin>
+
+                <div className="mt-6 md:mt-10">
+                    <HeroStats />
+                </div>
 
                 {/* 2. CINEMATIC SCROLL GALLERY */}
                 <ProjectShowcase />
